@@ -1,0 +1,30 @@
+ul{
+    font-family: 'Gill Sans';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 60px;
+    background-color: lightblue;
+}
+li{
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+p{
+    font-family: 'Gill Sans';
+    font-size: 20px;
+    font-weight: bold;
+}
+.correct-clicked{
+    color: green;
+    font-weight: bold;
+}
+.incorrect-clicked{
+    color: red;
+    font-weight: bold;
+}
