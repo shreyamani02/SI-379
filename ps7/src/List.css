@@ -1,0 +1,51 @@
+#clickButton{
+    font-family: 'Quicksand';
+    background-color: blue;
+    color: white;
+    border-color: blue;
+
+    width: 75%;
+    font-size: 32px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand';
+    font-size: 20px;
+}
+
+input{
+    width: 45%;
+    height: 45%;
+    font-family: 'Quicksand';
+}
+
+button{
+    font-family: 'Quicksand';
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+body{
+    font-family: 'Quicksand';
+}
+
+#work-interval{
+    margin-left: 50px;
+    width: 20%;
+    height: 20%;
+}
+
+#break-interval{
+    margin-left: 50px;
+    width: 20%;
+    height: 20%;
+}

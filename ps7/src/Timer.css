@@ -1,0 +1,16 @@
+#timeElem p,
+#timeElem button,
+#timeElem div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#timeElem {
+  float: right;
+  clear: right; /* Ensure that the container clears any floated elements on the right */
+}
+
+#timeElem > div {
+  display: inline-block; /* Change display property to inline-block */
+  margin-left: 5px; /* Adjust the margin between each lemon icon */
+}
