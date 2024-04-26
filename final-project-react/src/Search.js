@@ -2,17 +2,34 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './Search.css';
 import { Alert } from 'react-bootstrap';
+import nlp from 'compromise';
 
 
 function Search() {
+
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [searched, setSearched] = useState(false);
     const [screen, setScreen] = useState(0);
     const [showAlert, setShowAlert] = useState(false);
 
+
+    function nlp_categories(term){
+        const doc = nlp(term);
+        if (doc.match('#Person').out('array').length > 0){
+            return '+inauthor';
+        }
+        else if (!isNaN(Number(term))){
+            return '+isbn';
+        }
+        else if (doc.match('#Organization').out('array').length > 0){
+            return '+inpublisher';
+        }
+        return '';
+    }
     async function googleBooks() {
-        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchTerm)}&projection=lite&key=AIzaSyDVqTtYCbz6j_mseH7rOziGR6SywHNAz9I`);
+        const termType = nlp_categories(searchTerm);
+        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchTerm)}${termType}&projection=lite&key=AIzaSyDVqTtYCbz6j_mseH7rOziGR6SywHNAz9I`);
         const data = await response.json();
         console.log(data);
         setSearchResults(data);
