@@ -1,0 +1,40 @@
+#monthlybook h2{
+    font-family: 'Inria Serif';
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#monthlybook{
+    background-color: tan;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#description{
+    display: flex;
+}
+#image-section img{
+    width: 80%;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+#written-description p{
+    padding-left: 140px;
+    padding-right: 40px;
+    text-align: left;
+    font-family: 'Inria Serif';
+    font-size: 30px;
+}
+#written-description button{
+    width: 400px;
+    font-size: 28px;
+    border-radius: 30px;
+    background-color: lightgrey;
+    margin-right: 180px;
+}
+#written-description{
+    width: 80%;
+}

@@ -1,0 +1,75 @@
+input{
+    width: 65%;
+    height: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+div{
+    text-align: center;
+}
+button{
+    font-family: 'Inria Serif';
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+.tan-background{
+    background-color: tan;
+}
+h2{
+    font-family: 'Inria Serif';
+    font-size: 50px;
+    color: white;
+    padding-top: 30px;
+}
+#search-result{
+    background-color: tan;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+#results{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    padding-right: 50px;
+    font-family: 'Inria Serif';
+    padding-left: 350px;
+
+}
+h3{
+    font-size: 35px;
+}
+h4{
+    font-style: italic;
+}
+h5{
+    font-size: 20px;
+}
+#link-section{
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 150px;
+}
+#link-section button{
+    width: 400px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    border-radius: 30px;
+    background-color: lightgoldenrodyellow;
+}
+
+#entry{
+    display: flex;
+}
+
+#alert{
+    background-color: yellow;
+    font-family: 'Inria Serif';
+    width: 20%;
+    font-weight: bold;
+}
